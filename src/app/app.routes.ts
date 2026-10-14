@@ -3,6 +3,7 @@ import { Tablero } from './tablero/tablero';
 import { Acerca } from './acerca/acerca';
 import { S03 } from './s03/s03';
 import { S04 } from './s04/s04';
+import { Inventario } from './parcial1/inventario';
 
 // El mapa de rutas de la aplicación: qué componente se muestra en cada URL.
 // Esto se ve completo en la S09. Hoy solo dejamos el esqueleto para que la
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 's03', component: S03 }, // ejemplos de la sesión S03
   { path: 's04', component: S04 }, // ejemplos de la sesión S04
   { path: 'acerca', component: Acerca },
-  { path: '**', redirectTo: 'tablero' }, // cualquier otra URL vuelve al tablero
+  { path: 'parcial1', component: Inventario },
+  { path: '**', redirectTo: 'tablero' }, // siempre al final
 ];
